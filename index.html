@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+    <form id="myid" style="display: flex;">
+        <div style="width: 397px;">
+            <h1>Registeration Form</h1>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email">
+            <br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter Your Age">
+            <br>
+            <label for="pass">Password</label>
+            <input type="text" name="pass" id="pass" placeholder="Enter Your Password">
+            <br>
+            <label for="pass">Confirm Password</label>
+            <input type="text" name="pass" id="conPass" placeholder="Enter Your Password Again To Confirm">
+            <br>
+            <button type="submit" id="subBtn">Submit</button>
+        </div>
+
+        <div style="margin-top: 105px;">
+            <div class="image-container">
+                <img id="selected-image" src="" alt="Selected Image" />
+            </div>
+            <input type="file" id="image-input" accept="image/*" style="display: none;">
+            <button type="button" id="select-image-btn" class="btn-rose">Upload Image</button>
+        </div>
+        
+
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
